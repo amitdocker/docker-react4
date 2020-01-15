@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Devops and python
+          Learn Devops and its container.
         </a>
       </header>
     </div>
