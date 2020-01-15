@@ -1,0 +1,21 @@
+language: generic
+sudo : required
+services:
+  - docker
+before_install:
+  - docker build -t amitdocker/docker-react4 -f Dockerfile.dev
+script:
+  - echo "skipping tests"
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: "ap-south-1"
+  app: "docker-react"
+  env: "DockerReact-env-1"
+  bucket_name: "elasticbeanstalk-ap-south-1-446738417440"
+  bucket_path: "docker-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
