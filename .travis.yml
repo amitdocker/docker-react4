@@ -5,7 +5,6 @@ services:
 before_install:
   - docker build -t amitdocker/docker-react4 -f Dockerfile.dev .
 script:
- script:
   - docker run -e CI=true amitdocker/docker-react4 npm run test
 deploy:
   edge: true
