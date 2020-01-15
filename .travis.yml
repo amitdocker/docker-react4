@@ -10,10 +10,10 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "docker-react"
-  env: "DockerReact-env-1"
+  app: "planetshare"
+  env: "Planetshare-env"
   bucket_name: "elasticbeanstalk-ap-south-1-446738417440"
-  bucket_path: "docker-react"
+  bucket_path: "planetshare"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
