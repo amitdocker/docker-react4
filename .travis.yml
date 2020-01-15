@@ -10,10 +10,10 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "planetshare"
+  app: "Planetshare"
   env: "Planetshare-env"
-  bucket_name: "elasticbeanstalk-ap-south-1-446738417440"
-  bucket_path: "planetshare"
+  bucket_name: "elasticbeanstalk-ap-south-1-496046667163"
+  bucket_path: "Planetshare"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
